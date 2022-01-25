@@ -193,22 +193,12 @@
 
     // Resolucion punto 4
     document.write(`<p>4.Total Pacientes</p>`);
-    //let totalConsultas = dental.slice
-    //totalConsultas = radiologia.slice
-    //totalConsultas = traumatologia.slice
-    for (let values of radiologia) {
-        //console.log(values);
+    let totalConsultas = radiologia.concat(traumatologia, dental)
+    for (let values of totalConsultas) {
         document.write(`<p> ${(values.paciente)}</p>`);
-    };
-    for (let values of traumatologia) {
-        //console.log(values);
-        document.write(`<p> ${(values.paciente)}</p>`);
-    };
-    for (let values of dental) {
-        //console.log(values);
-        document.write(`<p> ${(values.paciente)}</p>`);
-    };
+    }
     document.write(`</br>`);
+
 
 
 
